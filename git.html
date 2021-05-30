@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="text/html">
+        <title>GitHub</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menulateral">
+                <div class="logo">
+                    <img src="github-logo.png">
+                    <h2>GitHub</h2>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="menu inicio"></i>Inicio</a></li>
+                    <li><a href="#"><i class="menu git-local"></i>Git Local</a></li>
+                    <li><a href="#"><i class="menu gitHub"></i>GitHub</a></li>
+                    <li><a href="#"><i class="menu gitVsVisual"></i>Git Vs Visual Studio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 9</div>
+    <img src="1_git_init.jpg" style="width:100%">
+    <div class="text">Usando el git init crea un nuevo repositorio en git</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">2 / 9</div>
+    <img src="2_add+commit.jpg" style="width:100%">
+    <div class="text">Usando el git add añadimos al repositorio de git ya creado el o los archivos especificados al área de preparación, commit confirma y guarda los cambios en el repositorio</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 9</div>
+    <img src="3_cambio_ramas.jpg" style="width:100%">
+    <div class="text">Git checkout crea ramas y te ayuda a navegar entre ellas, usando git checkout -b crea una nueva rama y se cambia a ella</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <img src="4_elim_rama.jpg" style="width:100%">
+    <div class="text">Git branch -d elimina la rama que se espeficique</div>
+    </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 9</div>
+    <img src="5_modificando_segundaRama.jpg" style="width:100%">
+    <div class="text">Usando los comandos anteriormente modifica la rama y la confirma usando el commit</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <img src="6_fusion_segundaRamaYMaster.jpg" style="width:100%">
+    <div class="text">Usando el comando merge se utiliza para fusionar dos ramas distintas</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">7 / 9</div>
+    <img src="7_cambios_repositorio.jpg" style="width:100%">
+    <div class="text">Este es un ejemplo de un cambio en un repositorio</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <img src="8_git_log.jpg" style="width:100%">
+    <div class="text">Usando git log podemos saber quien  y cuando ha hecho commit en la rama en la que nos ubicamos</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <img src="9_git_diff.jpg" style="width:100%">
+    <div class="text">Se usa para hacer una lista de conflictos respecto a otro archivo</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    </body>
+</html>
