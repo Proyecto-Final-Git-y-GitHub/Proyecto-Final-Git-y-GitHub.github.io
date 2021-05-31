@@ -102,9 +102,8 @@ body {
 .slideshow-container {
     width: 1000px;
     position: relative;
-    margin-left: 220px;
-    margin-top: 40px;
-   
+    margin: auto;
+    margin-top: 10%;
   }
   
   /* Next & previous buttons */
