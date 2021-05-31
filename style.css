@@ -100,7 +100,8 @@ body {
     width: 1000px;
     position: relative;
     margin: auto;
-    padding: auto;
+    margin-top: 10%;
+   
   }
   
   /* Next & previous buttons */
