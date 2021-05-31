@@ -100,8 +100,7 @@ body {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    padding: auto;
   }
   
   /* Next & previous buttons */
