@@ -9,7 +9,7 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 h3 {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 body {
@@ -102,7 +102,7 @@ body {
 .slideshow-container {
     width: 1000px;
     position: relative;
-    margin: auto;
+    margin-left: 220px;
     margin-top: 40px;
    
   }
